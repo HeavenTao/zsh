@@ -70,12 +70,18 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aliases autojump zsh-autosuggestions eza)
+plugins=(git aliases autojump zsh-autosuggestions eza alias-finder)
 
 # eza
 zstyle ':omz:plugins:eza' 'dirs-first' yes
 zstyle ':omz:plugins:eza' 'git-sttus' yes
 zstyle ':omz:plugins:eza' 'icons' yes
+
+#alias-finder
+zstyle ':omz:plugins:alias-finder' 'autoload' yes
+zstyle ':omz:plugins:alias-finder' 'longer' yes
+zstyle ':omz:plugins:alias-finder' 'exact' yes
+zstyle ':omz:plugins:alias-finder' 'cheaper' yes
 
 source $ZSH/oh-my-zsh.sh
 
