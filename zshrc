@@ -123,3 +123,5 @@ source $ZSH/oh-my-zsh.sh
 
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias v="neovide.exe --wsl"
